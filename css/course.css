@@ -1,0 +1,120 @@
+/* 课程样式 */
+/* 侧边栏 */
+.slider > ul li i.wdtc {
+  background: url(../images/icn_combo_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li i.tkjl {
+  background: url(../images/icn_record_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li i.zxdy {
+  background: url(../images/icn_answer_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li i.wdbzr {
+  background: url(../images/icn_teacher_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li i.sqcd {
+  background: url(../images/icn_apply_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li.acitve {
+  background: rgba(118, 48, 161, 0.1);
+  border-radius: 4px;
+  color: #7630a1;
+}
+.slider > ul li.acitve i.wdtc {
+  background: url(../images/icn_combo_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li.acitve i.tkjl {
+  background: url(../images/icn_record_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li.acitve i.zxdy {
+  background: url(../images/icn_answer_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li.acitve i.wdbzr {
+  background: url(../images/icn_teacher_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider > ul li.acitve i.sqcd {
+  background: url(../images/icn_apply_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* 我的套餐样式---tab */
+.tab {
+  margin: 20px 50px 45px 40px;
+  overflow: hidden;
+}
+.tab span {
+  color: #666464;
+  font-size: 16px;
+  line-height: 32px;
+  float: left;
+}
+
+.tab ul {
+  float: left;
+  overflow: hidden;
+}
+
+.tab ul li {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+  color: #666464;
+  margin-right: 20px;
+  border-radius: 16px;
+  float: left;
+  cursor: pointer;
+}
+
+.tab ul li:last-child {
+  margin-right: 0;
+}
+
+.tab ul li.active {
+  background: rgba(118, 48, 161, 0.1);
+  color: #7630a1;
+}
+/* 我的套餐样式---tab切换内容 */
+.tab-content {
+  margin: 0 50px 0 40px;
+  overflow: hidden;
+}
+.tab-content-item {
+  width: 238px;
+  height: 238px;
+  float: left;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  border: 1px solid #e6e6e6;
+  border-radius: 9px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.tab-content-item:nth-child(3n) {
+  margin-right: 0;
+}
+.tab-content-item a,
+.tab-content-item img {
+  width: 100%;
+  height: 160px;
+  display: block;
+}
+.tab-content-item p {
+  color: #666464;
+  font-size: 16px;
+  margin: 10px 10px 0;
+  line-height: 22px;
+  border-top: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

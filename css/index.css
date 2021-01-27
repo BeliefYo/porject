@@ -1,0 +1,22 @@
+/* 公共样式 */
+body {
+  background: #f7f7f7;
+}
+.body {
+  min-width: 1200px;
+}
+.main {
+  width: 1100px;
+  margin: 39px auto 20px;
+  min-height: 714px;
+  position: relative;
+}
+.main > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* 课程 */
