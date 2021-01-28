@@ -1,6 +1,7 @@
 /* 公共样式 */
 body {
   background: #f7f7f7;
+  font-size: 14px;
 }
 .body {
   min-width: 1200px;
