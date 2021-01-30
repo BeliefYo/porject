@@ -1,0 +1,91 @@
+.slider-ul {
+  padding: 10px;
+}
+.slider-ul li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #666464;
+  user-select: none;
+  cursor: pointer;
+  list-style: none;
+}
+.slider-ul li i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin: -4px 12px 0 20px;
+}
+
+/* 侧边栏 */
+.slider-ul li i.wdtc {
+  background: url(../images/icn_combo_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.tkjl {
+  background: url(../images/icn_record_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.zxdy {
+  background: url(../images/icn_answer_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.wdbzr {
+  background: url(../images/icn_teacher_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.sqcd {
+  background: url(../images/icn_apply_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.wdsj {
+  background: url(../images/icn_exam_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.wdct {
+  background: url(../images/icn_mistakes_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.dtjl {
+  background: url(../images/icn_answerrecord_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active {
+  background: rgba(118, 48, 161, 0.1);
+  border-radius: 4px;
+  color: #7630a1;
+}
+.slider-ul li.active i.wdtc {
+  background: url(../images/icn_combo_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.tkjl {
+  background: url(../images/icn_record_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.zxdy {
+  background: url(../images/icn_answer_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.wdbzr {
+  background: url(../images/icn_teacher_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.sqcd {
+  background: url(../images/icn_apply_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.wdsj {
+  background: url(../images/icn_exam_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.wdct {
+  background: url(../images/icn_mistakes_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.dtjl {
+  background: url(../images/icn_answerrecord_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+

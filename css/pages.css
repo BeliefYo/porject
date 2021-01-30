@@ -1,0 +1,95 @@
+.pages {
+  text-align: center;
+  /* position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0; */
+}
+.pages .layui-laypage {
+  margin: 0;
+}
+.pages .layui-laypage a,
+.pages .layui-laypage .layui-laypage-curr,
+.pages .layui-laypage .layui-laypage-spr {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #f7f7f7;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+  color: #606266;
+
+  line-height: 30px;
+  border: 0;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+  border-radius: 100%;
+  background: #7630a1;
+}
+
+/* 听课记录、我的错题、答题记录 */
+
+.tklist {
+  padding: 0 40px;
+}
+
+.tklist li {
+  height: 76px;
+  line-height: 76px;
+  border-bottom: 1px solid #f7f7f7;
+  overflow: hidden;
+}
+
+.tklist li span {
+  float: left;
+}
+
+.tklist li .name {
+  width: 360px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 40px;
+  color: #242324;
+}
+
+.tklist li .date {
+  width: 96px;
+  text-align: center;
+  margin-right: 80px;
+  color: #a8a5a5;
+}
+.tklist li .progress {
+  width: 64px;
+  text-align: center;
+  margin-right: 60px;
+  color: #7630a1;
+}
+.tklist li a {
+  float: left;
+  width: 98px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+
+  color: #a646cc;
+  border: 1px solid #a646cc;
+  border-radius: 17px;
+  margin-top: 21px;
+}
+.tklist li a:hover {
+  color: #fff;
+  border: 1px solid transparent;
+  background: linear-gradient(to left, #a646cc, #d27ce8);
+}
+
+.tklist li:first-child {
+  height: 72px;
+  line-height: 72px;
+}
+
+.tklist li:first-child span {
+  color: #666464;
+}
