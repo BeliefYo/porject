@@ -4,10 +4,13 @@ html,
 body {
   width: 100%;
   font-size: 14px;
+  overflow: hidden;
 }
 /* 我的套餐样式---tab */
 .tab {
-  margin: 20px 50px 45px 40px;
+  margin: 20px 50px 24px 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F7F7F7;
   overflow: hidden;
 }
 .tab span {
@@ -42,6 +45,9 @@ body {
   color: #7630a1;
 }
 /* 我的套餐样式---tab切换内容 */
+.toggle-tab-content {
+  padding-bottom: 70px;
+}
 .tab-content {
   margin: 0 50px 0 40px;
   display: none;
@@ -95,6 +101,7 @@ body {
   height: 120px;
   margin: 20px 0 0 60px;
 }
+
 /* 在线答疑-无数据 */
 .zxdy-noData {
   height: 100%;
@@ -191,7 +198,7 @@ body {
   border: 0;
   color: #a8a5a5;
 }
-.zxdy-item .zxdy-btn .view-reply {
+.zxdy-item .zxdy-btn .view-reply,.zxdy-item .zxdy-btn .await-reply {
   margin-right: 20px;
 }
 /* 我的班主任 */

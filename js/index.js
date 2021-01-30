@@ -1,4 +1,8 @@
 $(function () {
+  window.parent.document.all.contentIframe.height =
+    document.body.scrollHeight > 714 ? document.body.scrollHeight : 714;
+  tabIframe();
+
   // 在线答疑提问 课程及类型选择
   $(".zxdy-sel").click(function () {
     $(this).parent().siblings("ul").show();
@@ -14,7 +18,6 @@ $(function () {
 
   // 我的套餐---项目切换
   tab($(".tab li"), $(".toggle-tab-content .tab-content"));
-  tabIframe();
   // 我的试卷 tab展开收起
   $(".paper-show").click(function () {
     if ($(this).find("i").html() == "展开") {
@@ -22,28 +25,30 @@ $(function () {
       $(this).parent().addClass("shadow");
       $(this).siblings("ul").css({
         overflow: "auto",
-        height: "auto"
+        height: "auto",
       });
       $(this).parent().css({
-        marginTop:'10px'
+        marginTop: "10px",
       });
-      $(this).find('img').css({
-        transform:'rotate(180deg)'
-      })
+      $(this).find("img").css({
+        transform: "rotate(180deg)",
+      });
+      window.parent.document.all.contentIframe.height = document.body.scrollHeight 
     } else {
       $(this).find("i").html("展开");
       $(this).parent().removeClass("shadow");
       $(this).siblings("ul").removeClass("height");
       $(this).siblings("ul").css({
         overflow: "hidden",
-        height: "30px"
+        height: "30px",
       });
       $(this).parent().css({
-        marginTop:'0'
+        marginTop: "0",
       });
-      $(this).find('img').css({
-        transform:'rotate(0)'
-      })
+      $(this).find("img").css({
+        transform: "rotate(0)",
+      });
+      window.parent.document.all.contentIframe.height = document.body.scrollHeight 
     }
   });
 });
@@ -57,18 +62,13 @@ function tab(tabEl, contEl) {
 
 function tabIframe() {
   var oldSrc = "";
-  $(".slider li").click(function () {
+  $(".slider-ul li").click(function () {
     var src = $(this).parent().attr("url") + "/" + $(this).attr("url");
     if (oldSrc == src) {
       return false;
     }
     $(this).addClass("active").siblings().removeClass("active");
     oldSrc = src;
-    console.log(src);
-    $(this)
-      .parents(".slider")
-      .siblings(".content")
-      .find("iframe")
-      .attr("src", src);
+    $(window.parent.document.getElementById("contentIframe")).attr("src", src);
   });
 }

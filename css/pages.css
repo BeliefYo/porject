@@ -1,9 +1,9 @@
 .pages {
   text-align: center;
-  /* position: absolute;
+  position: absolute;
   bottom: 40px;
   left: 0;
-  right: 0; */
+  right: 0;
 }
 .pages .layui-laypage {
   margin: 0;

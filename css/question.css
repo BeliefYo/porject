@@ -4,7 +4,8 @@ body {
   overflow: hidden;
 }
 .tab {
-  margin: 20px 40px 25px 30px;
+  margin: 0 40px 25px 30px;
+  padding-top: 20px;
 }
 .tab > div {
   display: block;
@@ -31,7 +32,7 @@ body {
 .tab ul {
   width: 690px;
   float: left;
-  height: 30px;
+  height: 32px;
   overflow: hidden;
 }
 
@@ -69,7 +70,8 @@ body {
 }
 
 .question-content {
-  margin: 0 36px 041px;
+  margin: 0 36px 41px;
+  padding-bottom: 110px;
 }
 .question-content .question-item {
   width: 185px;
@@ -100,7 +102,7 @@ body {
   background-size: 100% 100%;
 }
 .question-content > div:nth-child(4) {
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .question-content .question-item p {
@@ -126,4 +128,16 @@ body {
 }
 .question-content .question-item .start {
   background: linear-gradient(90deg, #f6e8ae 0%, #eacd76 100%);
+}
+
+.question-content .pages {
+  margin-bottom: 0;
+}
+
+/* 我的错题 */
+.mistake ul{
+  padding-bottom: 120px;
+}
+.mistake {
+  padding-bottom: 40px !important;
 }
