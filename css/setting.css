@@ -1,0 +1,179 @@
+/* 设置 */
+body {
+  color: #242324;
+}
+/* 个人设置 */
+.userInfo,
+.psdSet,
+.mgAgree {
+  margin: 0 40px;
+}
+h6 {
+  font-size: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f7f7f7;
+  line-height: 22px;
+  padding-top: 40px;
+  position: relative;
+}
+h6 i {
+  width: 32px;
+  height: 4px;
+  background: linear-gradient(90deg, #d27ce8 0%, #a646cc 100%);
+  border-radius: 2px;
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+}
+.userInfo .tx {
+  font-size: 16px;
+  color: #666464;
+  line-height: 22px;
+  margin-top: 25px;
+  margin-bottom: 16px;
+}
+
+.userInfo .pic img {
+  width: 84px;
+  height: 84px;
+  border-radius: 100%;
+  margin-right: 36px;
+}
+
+.userInfo .pic .replace {
+  width: 98px;
+  height: 34px;
+  border-radius: 18px;
+  color: #a646cc;
+  line-height: 34px;
+  border: 1px solid #a646cc;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.userInfo .tip {
+  font-size: 12px;
+  color: #a8a5a5;
+  line-height: 17px;
+  margin: 6px 0 20px 4px;
+}
+.userInfo .info-item-label {
+  width: 80px;
+  font-size: 16px;
+}
+.userInfo .info-item span {
+  float: left;
+  line-height: 22px;
+}
+.userInfo .info-item {
+  margin-bottom: 26px;
+}
+
+.userInfo .info-item input {
+  width: 348px;
+  height: 30px;
+  line-height: 30px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  padding-left: 10px;
+}
+
+.userInfo .info-item .edit {
+  padding-left: 10px;
+  color: #a646cc;
+  cursor: pointer;
+}
+
+/* 密码设置 */
+.psdSet .psd-from {
+  margin-top: 25px;
+}
+.psdSet .psd-item {
+  margin-bottom: 20px;
+}
+.psdSet .psd-label {
+  width: 80px;
+  float: left;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.psdSet input {
+  width: 348px;
+  height: 30px;
+  color: #a8a5a5;
+  padding-left: 10px;
+  line-height: 30px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+}
+
+.psdSet .confirmEdit {
+  width: 136px;
+  height: 40px;
+  background: linear-gradient(270deg, #a646cc 0%, #d27ce8 100%);
+  border-radius: 20px;
+  margin-left: 80px;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.psdSet .psdError {
+  display: inline-block;
+  color: #666666;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+/* 我的协议 */
+.mgAgree {
+  padding-bottom: 110px;
+}
+.mgAgree h6 {
+  margin-bottom: 25px;
+}
+
+.mgAgree .desc {
+  width: 730px;
+  line-height: 22px;
+  color: #a8a5a5;
+  margin-bottom: 10px;
+}
+
+.mgAgree .agreeList {
+  margin-top: 25px;
+}
+
+.mgAgree .agreeList li {
+  height: 76px;
+  line-height: 76px;
+  border-top: 1px solid #f7f7f7;
+  overflow: hidden;
+}
+
+.mgAgree .agreeList li span {
+  float: left;
+  width: 360px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mgAgree .agreeList li a {
+  float: right;
+  color: #a646cc;
+  text-decoration: underline;
+}

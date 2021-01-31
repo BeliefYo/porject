@@ -51,6 +51,26 @@
   background: url(../images/icn_answerrecord_u.png) no-repeat center center;
   background-size: 100% 100%;
 }
+.slider-ul li i.grxx {
+  background: url(../images/icn_information_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.mmsj {
+  background: url(../images/icn_password_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.wdxy {
+  background: url(../images/icn_agreement_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.wddd {
+  background: url(../images/icn_order_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li i.shdz {
+  background: url(../images/icn_local_u.png) no-repeat center center;
+  background-size: 100% 100%;
+}
 .slider-ul li.active {
   background: rgba(118, 48, 161, 0.1);
   border-radius: 4px;
@@ -89,3 +109,23 @@
   background-size: 100% 100%;
 }
 
+.slider-ul li.active  i.grxx {
+  background: url(../images/icn_information_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active  i.mmsj {
+  background: url(../images/icn_password_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active  i.wdxy {
+  background: url(../images/icn_agreement_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.wddd {
+  background: url(../images/icn_order_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}
+.slider-ul li.active i.shdz {
+  background: url(../images/icn_local_p.png) no-repeat center center;
+  background-size: 100% 100%;
+}

@@ -135,9 +135,28 @@ body {
 }
 
 /* 我的错题 */
-.mistake ul{
+.mistake ul {
   padding-bottom: 120px;
 }
 .mistake {
   padding-bottom: 40px !important;
+}
+.progress {
+  position: relative;
+}
+.progress img {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: -15px;
+  cursor: pointer;
+}
+
+/* 答题记录 */
+.notes li .date {
+  margin-right: 60px;
+}
+.notes li .progress {
+  width: 112px;
+  margin-right: 32px;
 }
