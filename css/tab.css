@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .slider-ul {
   padding: 10px;
+  background: #fff;
 }
 .slider-ul li {
   height: 50px;
@@ -109,15 +114,15 @@
   background-size: 100% 100%;
 }
 
-.slider-ul li.active  i.grxx {
+.slider-ul li.active i.grxx {
   background: url(../images/icn_information_p.png) no-repeat center center;
   background-size: 100% 100%;
 }
-.slider-ul li.active  i.mmsj {
+.slider-ul li.active i.mmsj {
   background: url(../images/icn_password_p.png) no-repeat center center;
   background-size: 100% 100%;
 }
-.slider-ul li.active  i.wdxy {
+.slider-ul li.active i.wdxy {
   background: url(../images/icn_agreement_p.png) no-repeat center center;
   background-size: 100% 100%;
 }
