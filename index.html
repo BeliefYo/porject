@@ -69,14 +69,18 @@
   </div>
   <div class="nav">
     <ul class="layui-clear">
-      <li class="active" url="course/mySetMeal"><img src="images/icn_course.png">课程</li>
-      <li url="question/myPaper"><img src="images/icn_questions.png">题库</li>
-      <li url="order/myOrder"><img src="images/icn_indent.png">订单</li>
-      <li url="course/mySetMeal"><img src="images/icn_messages.png">消息</li>
-      <li url="settings/userInfo"><img src="images/icn_set.png">设置</li>
+      <li class="active" url="course/mySetMeal"><img src="images/icn_course.png">我的课程</li>
+      <li url="question/myPaper"><img src="images/icn_questions.png">我的题库</li>
+      <li url="order/myOrder"><img src="images/icn_indent.png">订单管理</li>
+      <li url="message/msg"><img src="images/icn_messages.png">系统消息</li>
+      <li url="settings/userInfo"><img src="images/icn_set.png">个人信息</li>
     </ul>
   </div>
-  <div class="main layui-clear">
+  <div class="main message" id="message">
+    <iframe id="messageIframe" src="message/msg.html" height="100%" width="100%" marginwidth="0" marginheight="0"
+    hspace="0" vspace="0" frameborder="0" name="messageIframe"></iframe>
+  </div>
+  <div class="main layui-clear" id="main">
     <div class="slider">
       <iframe id="sliderIframe" src="course/tab.html" frameborder="0" width="100%" height="100%"></iframe>
     </div>

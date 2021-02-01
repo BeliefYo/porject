@@ -1,5 +1,6 @@
 /* 订单 */
-body,html {
+body,
+html {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -168,11 +169,13 @@ body,html {
 .address {
   height: 100%;
 }
+/* 无数据 */
 .noData {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .noData p {
@@ -195,4 +198,79 @@ body,html {
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
+}
+
+/* 有数据 */
+.data {
+  margin: 0 40px 20px;
+  padding-top: 30px;
+}
+.address-btn {
+  font-size: 16px;
+  color: #ffffff;
+  width: 136px;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(270deg, #a646cc 0%, #d27ce8 100%);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+.address-item {
+  margin-bottom: 20px;
+  border: 1px solid #e6e6e6;
+  padding: 20px 10px;
+  border-radius: 8px;
+}
+
+.address-item .address-left {
+  float: left;
+}
+
+.address-item .address-left p {
+  margin-bottom: 10px;
+}
+
+.address-item .address-left p:last-child {
+  margin-bottom: 0;
+}
+
+.address-item .address-info {
+  line-height: 22px;
+}
+
+.address-tel,
+.address-region,
+.detailed-address {
+  color: #a8a5a5;
+}
+
+.address-item p .label {
+  display: inline-block;
+}
+
+.address-item .address-info .default {
+  padding: 2px 3px;
+  background: #f85959;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.address-item .address-right {
+  float: right;
+  margin-top: 45px;
+}
+
+.address-item .address-right span{
+  padding-right: 5px;
+  color: #a8a5a5;
+}
+.address-item .address-right .setDefault{
+  color: #f85959;
 }

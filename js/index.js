@@ -63,6 +63,14 @@ $(function () {
   $(".nav ul li").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
     var url = $(this).attr("url");
+    if(url == 'message/msg') {
+      $("#message").show()
+      $("#main").hide()
+      return false;
+    }else {
+      $("#message").hide()
+      $("#main").show()
+    }
     var tabUrl = $(this).attr("url").split("/")[0];
     $(window.parent.document.getElementById("sliderIframe")).attr(
       "src",
@@ -81,7 +89,9 @@ function tab(tabEl, contEl, page) {
   tabEl.click(function () {
     $(this).addClass("active").siblings().removeClass("active");
     contEl.eq($(this).index()).show().siblings().hide();
-    if (page == "order") {
+    if ((page == "order" && $(this).index() == 1) || $(this).index() == 2) {
+      window.parent.document.all.contentIframe.height = 714;
+    } else {
       window.parent.document.all.contentIframe.height =
         document.body.scrollHeight > 714 ? document.body.scrollHeight : 714;
     }

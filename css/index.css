@@ -25,7 +25,12 @@ body {
   border-radius: 8px 8px 0px 0px;
   float: right;
 }
-
+#message {
+  display: none;
+  height: 713px;
+  background: #fff;
+  border-radius: 8px 8px 0px 0px;
+}
 /* 头部 */
 .head {
   width: 100%;

@@ -1,0 +1,266 @@
+/* 登陆 */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+}
+.log-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/log_bg.png) top center no-repeat;
+}
+.log-main .box {
+  width: 1000px;
+  height: 700px;
+  background: url(../images/log_card_bg.png) top center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.log-main .moudle {
+  width: 540px;
+  height: 584px;
+  background: url(../images/card_shadow.png) top center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.log-main .moudle > div {
+  width: 300px;
+  height: 464px;
+  background: #fff;
+  border-radius: 20px;
+  margin-right: 60px;
+  padding: 0 60px;
+}
+
+.log-main .moudle h6 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+  line-height: 33px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.log-main .log-tab {
+  margin: 0 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.log-main .log-tab span {
+  font-size: 18px;
+  color: #8d9094;
+  line-height: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.log-main .log-tab span.active {
+  color: #333333;
+}
+.log-main .log-tab span.active i {
+  display: block;
+  width: 60px;
+  height: 8px;
+  background: rgba(166, 70, 204, 0.2);
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.log-main .log-content .log-item {
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  background: #f7f7f7;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.log-main .log-content > div {
+  display: none;
+}
+
+.log-main .log-item .label {
+  font-size: 16px;
+  color: #333333;
+  line-height: 20px;
+  border-right: 1px solid #d4d4d4;
+  padding: 0 13px 0 24px;
+}
+
+.log-main .log-item input {
+  border: 0;
+  font-size: 14px;
+  color: #8d9094;
+  line-height: 20px;
+  background: #f7f7f7;
+  padding-left: 8px;
+}
+
+.log-main .forget {
+  margin-bottom: 40px;
+}
+
+.log-main .forget a {
+  float: right;
+  font-size: 14px;
+  color: #a646cc;
+  line-height: 18px;
+}
+
+.log-main .log-content .login-btn {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #d27ce8 0%, #a646cc 100%);
+}
+
+.log-main .no {
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  line-height: 18px;
+}
+
+.log-main .no a {
+  color: #a646cc;
+}
+
+.log-main .log-content .code {
+  margin-bottom: 10px;
+}
+.log-main .log-content .log-tip {
+  margin-bottom: 40px;
+  font-size: 12px;
+  color: #8d9094;
+  line-height: 20px;
+}
+
+.log-main .code input {
+  width: 84px;
+  padding-right: 35px;
+}
+
+.log-main .code .getCode {
+  font-size: 14px;
+  color: #a646cc;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* 注册 */
+.regin h6 {
+  margin-bottom: 40px;
+}
+
+.regin .log-content .code {
+  margin-bottom: 20px;
+}
+
+.regin .log-content .psd {
+  margin-bottom: 40px;
+}
+
+/* 忘记密码 */
+.forgetPsd .continue {
+  display: block;
+  padding: 30px 0 32px 0;
+  font-size: 16px;
+  color: #a646cc;
+  line-height: 20px;
+  text-align: right;
+}
+
+.forgetPsd .progress {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.forgetPsd .progress li {
+  float: left;
+}
+
+.forgetPsd .progress li:nth-child(odd) {
+  margin-right: 80px;
+}
+.forgetPsd .progress li:last-child {
+  margin-right: 0;
+}
+.forgetPsd .progress li:nth-child(odd) span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: url(../images/nocolour.png) center center no-repeat;
+  background-size: 100% 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.forgetPsd .progress li:nth-child(odd) p {
+  text-align: center;
+  color: #939699;
+  margin-top: 8px;
+}
+
+.forgetPsd .progress li:nth-child(even) {
+  position: absolute;
+  width: 77px;
+  height: 1px;
+  background: #dddddd;
+  top: 19px;
+  left: 45px;
+}
+
+.forgetPsd .progress li.five {
+  left: 176px;
+}
+
+.forgetPsd .progress li:nth-child(even) i {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #eeeeee;
+  border-radius: 100%;
+  position: absolute;
+  top: -3px;
+}
+
+.forgetPsd .progress li:nth-child(even) i:first-child {
+  left: -3px;
+}
+
+.forgetPsd .progress li:nth-child(even) i:last-child {
+  right: -3px;
+}
+
+.forgetPsd .progress li.active span {
+  background: url(../images/colourfui.png) center center no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+}
+.forgetPsd .progress li.active p {
+  color: #a646cc;
+}
+
+.forgetPsd .log-content .again {
+  margin-bottom: 40px;
+}

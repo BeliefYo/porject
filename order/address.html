@@ -20,10 +20,74 @@
         <div class="add">新增收货地址</div>
       </div>
     </div>
-    <div class="data"></div>
+    <div class="data">
+      <div class="address-btn">新增收货地址</div>
+      <div class="address-list">
+        <div class="address-item layui-clear">
+          <div class="address-left">
+            <p class="address-info">
+              <span class="name">小1</span>
+              <span class="address-t">北京北京大钟寺111号院</span>
+              <span class="default">默认地址</span>
+            </p>
+            <p class="address-tel">
+              <span class="label">联系电话：</span>13488888888
+            </p>
+            <p class="address-region">
+              <span class="label">地&#12288;&#12288;区：</span>北京 北京
+            </p>
+            <p class="detailed-address">
+              <span class="label">详细地址：</span>大钟寺111号院
+            </p>
+          </div>
+          <div class="address-right">
+            <span class="address-edit"><img src="" alt="">编辑</span>
+            <span class="address-delete"><img src="" alt="">删除</span>
+          </div>
+        </div>
+        <div class="address-item layui-clear">
+          <div class="address-left">
+            <p class="address-info">
+              <span class="name">小1</span>
+              <span class="address-t">北京北京大钟寺111号院</span>
+            </p>
+            <p class="address-tel">
+              <span class="label">联系电话：</span>13488888888
+            </p>
+            <p class="address-region">
+              <span class="label">地&#12288;&#12288;区：</span>北京 北京
+            </p>
+            <p class="detailed-address">
+              <span class="label">详细地址：</span>大钟寺111号院
+            </p>
+          </div>
+          <div class="address-right">
+            <span class="setDefault">设为默认</span>
+            <span class="address-edit"><img src="" alt="">编辑</span>
+            <span class="address-delete"><img src="" alt="">删除</span>
+          </div>
+        </div>
+      </div>
+      <div class="pages"></div>
+    </div>
   </div>
   <script src="../layui/layui.js"></script>
   <script src="../js/index.js"></script>
+  <script>
+    layui.use(["laypage", "layer"], function () {
+      var laypage = layui.laypage,
+        layer = layui.layer;
+      laypage.render({
+        elem: $(".pages"),
+        count: 100, //数据总数
+        prev: "<em><</em>",
+        next: "<em>></em>",
+        jump: function (obj) {
+          console.log(obj);
+        },
+      });
+    });
+  </script>
 </body>
 
 </html>
