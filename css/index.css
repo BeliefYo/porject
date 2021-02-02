@@ -168,6 +168,7 @@ body {
   top: 374px;
   right: 326px;
   cursor: pointer;
+  display: none;
 }
 .zxdy-ask p {
   text-align: center;
@@ -178,7 +179,8 @@ body {
 .zxdy-ask-view,
 .grsz-mobile,
 .wddd-order,
-.shdz-address {
+.shdz-address,
+.grxx-edit-tel {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -218,7 +220,9 @@ body {
   margin-top: 30px;
   margin-bottom: 37px;
 }
-
+.zxdy-ask-box .zxdy-ask-from {
+  margin-left: 40px;
+}
 .zxdy-ask-box .zxdy-from-item {
   margin-bottom: 20px;
 }
@@ -457,18 +461,36 @@ body {
   cursor: pointer;
 }
 
+/* 题库 */
 /* 我的错题-错题统计提示 */
-.ctTooltip {
-  width: 452px;
-  height: 37px;
-  line-height: 37px;
+.tip {
+  padding: 6px 10px;
   font-style: 13px;
   color: #fff;
   background: rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
   position: absolute;
   top: -13px;
-  right: 0;
+  right: -260px;
+  border-radius: 5px;
+  z-index: 99999;
+  display: none;
+}
+
+.tip::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: -8px;
+  left: 38px;
+}
+
+.dtTooltip {
+  right: -274px;
 }
 
 /* 个人设置-修改手机号 */
@@ -699,6 +721,7 @@ body {
   line-height: 18px;
   margin-top: 5px;
   margin-left: 84px;
+  display: none;
 }
 .shdz-address .shdz-btn {
   margin-top: 40px;
@@ -722,4 +745,114 @@ body {
   background: #ffffff;
   border: 1px solid #a8a5a5;
   color: #a8a5a5;
+}
+
+/* 个人信息 修改手机号 */
+.grxx-edit-tel {
+  overflow: hidden;
+}
+.grxx-edit-tel h6 {
+  font-size: 24px;
+  color: #242324;
+  line-height: 33px;
+  margin: 30px 0 40px 0;
+  text-align: center;
+}
+.grxx-edit-tel > div {
+  width: 640px;
+  height: 403px;
+  background: #fff;
+  border-radius: 16px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grxx-edit-tel .grxx-edit-from {
+  margin-left: 84px;
+  margin-right: 100px;
+}
+
+.grxx-edit-tel .grxx-edit-item {
+  overflow: hidden;
+}
+.grxx-edit-tel .grxx-edit-item p {
+  font-size: 13px;
+  color: #f85959;
+  margin-left: 105px;
+  visibility: hidden;
+  float: left;
+}
+
+.grxx-edit-tel .grxx-edit-label {
+  float: left;
+  width: 96px;
+  text-align: right;
+  line-height: 32px;
+}
+
+.grxx-edit-tel input {
+  float: left;
+  width: 348px;
+  height: 30px;
+  line-height: 30px;
+  background: #ffffff;
+  padding-left: 10px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  border: 1px solid #e5e5e5;
+}
+
+.grxx-edit-tel .tel {
+  margin-bottom: 20px;
+}
+
+.grxx-edit-tel .tel input {
+  background: #f7f7f7;
+}
+
+.grxx-edit-tel .code-input {
+  width: 148px;
+}
+
+.grxx-edit-tel .edit-getCode {
+  padding: 6px 10px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #a646cc;
+  margin-left: 20px;
+  float: left;
+  color: #A646CC;
+  cursor: pointer;
+}
+
+.grxx-edit-tel .grxx-edit-btn {
+  margin-top: 20px;
+}
+
+.grxx-edit-tel .grxx-edit-btn div {
+  width: 136px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.grxx-edit-tel .grxx-edit-btn .confirm {
+  color: #fff;
+  margin-left: 180px;
+  margin-right: 20px;
+  background: linear-gradient(270deg, #a646cc 0%, #d27ce8 100%);
+}
+
+.grxx-edit-tel .grxx-edit-btn .cancel {
+  background: #ffffff;
+  color: #a8a5a5;
+  border: 1px solid #a8a5a5;
 }

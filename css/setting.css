@@ -137,6 +137,7 @@ h6 i {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
+  display: none;
 }
 
 /* 我的协议 */
