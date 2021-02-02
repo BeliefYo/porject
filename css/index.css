@@ -304,6 +304,10 @@ body {
   display: inline-block;
 }
 
+.zxdy-from-item .zxdy-from-block .zxdy-upload img {
+  cursor: pointer;
+}
+
 .zxdy-from-item .zxdy-from-block .zxdy-upload span {
   color: #a8a5a5;
   font-size: 12px;

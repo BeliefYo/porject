@@ -30,6 +30,7 @@ $(function () {
     );
     window.parent.document.all.contentIframe.height =
       document.body.scrollHeight > 714 ? document.body.scrollHeight : 714;
+    window.parent.document.all.sliderIframe.height = document.body.scrollHeight;
   });
 
   // 我的套餐---项目切换
@@ -64,6 +65,11 @@ $(function () {
   $(".btn_ask").click(function () {
     $(this).parent().siblings(".answer-zw").show();
   });
+  
+  // 在线答疑提问 删除图片
+  $(".img-delete").click(function(){
+    $(this).parents(".img-item").remove()
+  })
 
   // 题库 我的试卷 tab展开收起
   $(".paper-show").click(function () {
@@ -82,6 +88,8 @@ $(function () {
       });
       window.parent.document.all.contentIframe.height =
         document.body.scrollHeight;
+      window.parent.document.all.sliderIframe.height =
+        document.body.scrollHeight;
     } else {
       $(this).find("i").html("展开");
       $(this).parent().removeClass("shadow");
@@ -97,6 +105,8 @@ $(function () {
         transform: "rotate(0)",
       });
       window.parent.document.all.contentIframe.height =
+        document.body.scrollHeight;
+      window.parent.document.all.sliderIframe.height =
         document.body.scrollHeight;
     }
   });
@@ -186,10 +196,13 @@ $(function () {
     }
   });
 
+
+
+
   // 设置密码 保存修改
   $(".confirmEdit").on("click", function () {
-    if ($("#oldPsd").val() != '' && $("#oldPsd").val() != $("#newPsd").val()) {
-      $(".psdError").show().find("span").html("两次填写的密码不一致")
+    if ($("#oldPsd").val() != "" && $("#oldPsd").val() != $("#newPsd").val()) {
+      $(".psdError").show().find("span").html("两次填写的密码不一致");
       setTimeout(function () {
         $(".psdError").hide().find("span").html("");
       }, 1500);
@@ -251,6 +264,7 @@ function tab(tabEl, contEl, page) {
       window.parent.document.all.contentIframe.height =
         document.body.scrollHeight > 714 ? document.body.scrollHeight : 714;
     }
+    window.parent.document.all.sliderIframe.height = document.body.scrollHeight;
   });
 }
 
@@ -272,5 +286,6 @@ function tabIframe() {
     }
     window.parent.document.all.contentIframe.height =
       document.body.scrollHeight > 714 ? document.body.scrollHeight : 714;
+    window.parent.document.all.sliderIframe.height = document.body.scrollHeight;
   });
 }

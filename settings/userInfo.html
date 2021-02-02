@@ -16,8 +16,8 @@
     <h6>个人信息<i></i></h6>
     <p class="tx">头像</p>
     <div class="pic layui-clear">
-      <img src="../images/pics_redit.png" alt="">
-      <div class="replace">更换头像</div>
+      <img src="../images/pics_redit.png" id="pic">
+      <div class="replace" id="replaceImg">更换头像</div>
     </div>
     <p class="tip">图片支持jpg、png、gif、bmp、bif格式</p>
     <div class="info">
@@ -34,6 +34,31 @@
   </div>
   <script src="../layui/layui.js"></script>
   <script src="../js/index.js"></script>
+  <script>
+    layui.use('upload', function () {
+      var upload = layui.upload;
+      //普通图片上传
+      var uploadInst = upload.render({
+        elem: '#replaceImg'
+        , url: 'https://httpbin.org/post' //改成您自己的上传接口
+        , before: function (obj) {
+          //预读本地文件示例，不支持ie8
+          obj.preview(function (index, file, result) {
+            $('#pic').attr('src', result); //图片链接（base64）
+          });
+        }
+        , done: function (res) {
+          //如果上传失败
+          if (res.code > 0) {
+            return layer.msg('上传失败');
+          }
+          //上传成功
+        }
+        , error: function () {
+        }
+      });
+    })
+  </script>
 </body>
 
 </html>
