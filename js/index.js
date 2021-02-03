@@ -33,6 +33,17 @@ $(function () {
     window.parent.document.all.sliderIframe.height = document.body.scrollHeight;
   });
 
+  // 首页日历
+  $("#toggleDate").click(function () {
+    if ($(this).attr("src") == "images/icn_dropdown.png") {
+      $("#date").addClass("topDate");
+      $(this).attr("src",'images/icn_packup.png')
+    }else {
+      $("#date").removeClass("topDate");
+      $(this).attr("src",'images/icn_dropdown.png')
+    }
+  });
+
   // 我的套餐---项目切换
   tab($(".tab li"), $(".toggle-tab-content .tab-content"));
 
@@ -65,11 +76,11 @@ $(function () {
   $(".btn_ask").click(function () {
     $(this).parent().siblings(".answer-zw").show();
   });
-  
+
   // 在线答疑提问 删除图片
-  $(".img-delete").click(function(){
-    $(this).parents(".img-item").remove()
-  })
+  $(".img-delete").click(function () {
+    $(this).parents(".img-item").remove();
+  });
 
   // 题库 我的试卷 tab展开收起
   $(".paper-show").click(function () {
@@ -195,9 +206,6 @@ $(function () {
       });
     }
   });
-
-
-
 
   // 设置密码 保存修改
   $(".confirmEdit").on("click", function () {

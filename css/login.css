@@ -144,6 +144,7 @@ body {
 .log-main .log-content .code {
   margin-bottom: 10px;
 }
+
 .log-main .log-content .log-tip {
   margin-bottom: 40px;
   font-size: 12px;
@@ -153,7 +154,7 @@ body {
 
 .log-main .code input {
   width: 84px;
-  padding-right: 35px;
+  padding-right: 30px;
 }
 
 .log-main .code .getCode {
@@ -262,5 +263,9 @@ body {
 }
 
 .forgetPsd .log-content .again {
+  margin-bottom: 40px;
+}
+
+.forgetPsd .log-content .code {
   margin-bottom: 40px;
 }
