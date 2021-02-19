@@ -1,0 +1,258 @@
+body {
+  background: #f7f7f7;
+}
+
+.w1100 {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+.courseList .head {
+  width: 100%;
+  height: 308px;
+  background: url(../images/bg_bg_course_livebg_course_live.png) center center
+    no-repeat;
+  background-size: 100% 100%;
+}
+.courseList h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 260px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.courseList .head .top {
+  width: 100%;
+  height: 48px;
+}
+.courseList .head .w1100 {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+.courseList .head .top .buy {
+  float: right;
+  margin-top: 13px;
+}
+.courseList .head .top .info {
+  float: right;
+  height: 100%;
+  margin-top: 6px;
+  margin-right: 18px;
+  position: relative;
+}
+.courseList .head .top .info ul {
+  width: 120px;
+  position: absolute;
+  top: 43px;
+  left: -34px;
+  background: #fff;
+  border-radius: 4px;
+  display: none;
+  z-index: 99999;
+}
+.courseList .head .top .info:hover ul {
+  display: block;
+}
+.courseList .head .top .info ul li {
+  text-align: center;
+  line-height: 39px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.courseList .head .top .info ul li img {
+  margin-right: 8px;
+}
+.courseList .head .top .info ul li:first-child {
+  color: #7630a1;
+  line-height: 48px;
+}
+.courseList .head .top .info ul li:last-child {
+  border-bottom: 0;
+}
+
+.courseList .head .user {
+  float: left;
+  margin-top: 94px;
+}
+
+.courseList .head .middle > .w1100 {
+  position: relative;
+}
+
+.courseList .head .middle img {
+  width: 72px;
+  height: 72px;
+  border: 100%;
+  float: left;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+.courseList .head .middle .telName {
+  float: left;
+}
+
+.courseList .head .middle .telName p {
+  color: #fff;
+}
+.courseList .head .middle .telName .tel {
+  font-size: 24px;
+  line-height: 33px;
+}
+.courseList .head .middle .telName .name {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.courseList .list {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.courseList .list .tab {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: -30px;
+  font-size: 0;
+}
+
+.courseList .list .tab li {
+  width: 50%;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  color: #666464;
+  font-size: 16px;
+  background: #fff;
+  cursor: pointer;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.courseList .list .tab li.active {
+  height: 70px;
+  line-height: 70px;
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.1);
+}
+.courseList .list .tab li img {
+  padding-right: 10px;
+}
+.courseList .list .tab li:first-child {
+  border-top-left-radius: 8px;
+}
+.courseList .list .tab li:last-child {
+  border-top-right-radius: 8px;
+}
+
+.courseList .content {
+  padding: 0 40px;
+  background: #fff;
+  border-radius: 8px 8px 0px 0px;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+
+.courseList .content > div {
+  display: none;
+}
+
+.courseList .content li,
+.courseList .content li > p {
+  line-height: 77px;
+  border-bottom: 1px solid #f7f7f7;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.courseList .content .item > li:first-child {
+  line-height: 72px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.courseList .content .item:last-child li:last-child {
+  border: none;
+}
+.courseList .content li span {
+  float: left;
+  width: 360px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #242324;
+}
+
+.courseList .content li a {
+  width: 100px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  float: right;
+  margin-top: 20px;
+}
+
+.courseList .content .item li .go {
+  color: #fff;
+  background: linear-gradient(to left, #a646cc, #d27ce8);
+  border-radius: 18px;
+}
+
+.courseList .content .item li .download {
+  color: #a646cc;
+  border: 1px solid #a646cc;
+  box-sizing: border-box;
+  border-radius: 18px;
+  margin-left: 20px;
+}
+
+.courseList .content .item li:first-child img {
+  vertical-align: middle;
+  margin-top: -4px;
+}
+.courseList .content .item li>ul {
+  height: 0;
+}
+
+.courseList .chlid {
+  width: 100%;
+}
+.courseList .chlid i {
+  font-style: inherit;
+  font-weight: normal;
+}
+.courseList .chlid i.time {
+  color: #a8a5a5;
+  font-size: 14px;
+  padding-right: 53px;
+}
+.courseList .chlid i.name {
+  color: #e6b422;
+  font-size: 14px;
+}
+.courseList .chlid li span {
+  margin-left: 26px;
+}
+.courseList .chlid a {
+  color: #fff;
+  font-size: 14px;
+}
+.courseList .chlid a.soon {
+  background: linear-gradient(270deg, #a646cc 0%, #d27ce8 100%);
+  border-radius: 18px;
+  opacity: 0.5;
+}
+.courseList .toggleshow {
+  margin-top: 30px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+a:hover {
+  color: inherit;
+}
